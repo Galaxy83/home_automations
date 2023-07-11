@@ -6,8 +6,6 @@ from methods import get_last_state, set_last_state, get_current_state
 qb = Client('http://192.168.50.100:8080/')
 
 
-# qb.login('admin', 'password123')
-
 def pause_all_torrents_if_online(key, name):
     """ Pauses all torrents when the PS5 is online and resumes them when the PS5 is offline. """
 
