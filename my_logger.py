@@ -12,7 +12,7 @@ def init(name):
     if LOGGERS.get(name):
         return LOGGERS[name]
 
-    log_dir = 'logs'
+    log_dir = os.path.expanduser('~/home_automations/logs')
     os.makedirs(log_dir, exist_ok=True)
 
     log_filename = f"{log_dir}/{name}.log"
